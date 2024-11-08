@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bdd091eb856d44ac8b1ef5be4080c, type: 3}
+  m_Name: 8Player
+  m_EditorClassIdentifier: 
+  roles:
+  - roleName: s1
+    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
+  - roleName: s2
+    roleSprite: {fileID: 21300000, guid: 3ee0d7b17b302534abc681f2758d7358, type: 3}
+  - roleName: s3
+    roleSprite: {fileID: 21300000, guid: e0c107f87633cea458deee7b1d799379, type: 3}
+  - roleName: s4
+    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
+  - roleName: s5
+    roleSprite: {fileID: 21300000, guid: bf07c89d6bdb1384093fdad51386eb0c, type: 3}
+  - roleName: s6
+    roleSprite: {fileID: 21300000, guid: bf07c89d6bdb1384093fdad51386eb0c, type: 3}
+  - roleName: s7
+    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
+  - roleName: s8
+    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
