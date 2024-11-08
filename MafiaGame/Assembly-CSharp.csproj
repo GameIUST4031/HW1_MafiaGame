@@ -50,9 +50,7 @@
     <Compile Include="Assets\Scripts\GameManger.cs" />
     <Compile Include="Assets\Scripts\RoleContainer.cs" />
     <Compile Include="Assets\Scripts\CardController.cs" />
-    <Compile Include="Assets\buttonHandler 1.cs" />
     <Compile Include="Assets\Scripts\RoleManager.cs" />
-    <Compile Include="Assets\ButtonUi.cs" />
     <Compile Include="Assets\Scripts\Cards.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,56 @@ public class TurnManager : MonoBehaviour
     void Start()
     {
         roles = role.GetRoles();
+    }
+
+    void AnimateRollCard(Action ss)
+    {
+        StartCoroutine(AnimateRollCardProcess(ss));
+    }
+
+    private IEnumerator AnimateRollCardProcess(Action ss)
+    {
+        float constant  = 0.2f;
+        while (image.transform.rotation.eulerAngles.y < 90)
+        {
+            image.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y+constant, 0);
+            yield return null;
+        }
+        image.transform.rotation = Quaternion.Euler(0, 90, 0);
+        ss.Invoke();
+        while (image.transform.rotation.eulerAngles.y > 0 && image.transform.rotation.eulerAngles.y < 180)
+        {
+            image.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y-constant, 0);
+            Debug.Log(image.transform.rotation.eulerAngles.y);
+            yield return null;
+        }
+        image.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+    }
+    void AnimateRollCard1(Action ss)
+    {
+        StartCoroutine(AnimateRollCardProcess1(ss));
+    }
+
+    private IEnumerator AnimateRollCardProcess1(Action ss)
+    {
+        float constant  = 0.2f;
+        while (image.transform.rotation.eulerAngles.y < 90)
+        {
+            image.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y+constant, 0);
+            yield return null;
+        }
+
+        image.transform.rotation = Quaternion.Euler(0, 90, 0);
+        ss.Invoke();
+        while (image.transform.rotation.eulerAngles.y > 0 && image.transform.rotation.eulerAngles.y < 180)
+        {
+            image.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y-constant, 0);
+            Debug.Log(image.transform.rotation.eulerAngles.y);
+            yield return null;
+        }
+        image.transform.rotation = Quaternion.Euler(0, 0, 0);
+
     }
 
     void Show_Role()
@@ -53,11 +104,11 @@ public class TurnManager : MonoBehaviour
         {
             if (state)
             {
-                Hide_Role();
+                AnimateRollCard(Hide_Role);
             }
             else
             {
-                Show_Role();
+                AnimateRollCard(Show_Role);
             }
         }
     }
