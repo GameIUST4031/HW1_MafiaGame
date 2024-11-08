@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class TurnManager : MonoBehaviour
 {
-    [SerializeField]
-    Role role;
-    [SerializeField]
-    Text text;
-    [SerializeField]
-    Image image;
-    [SerializeField]
-    Sprite sprite;
-    
+    [SerializeField] Role role;
+    [SerializeField] Text text;
+    [SerializeField] Image image;
+    [SerializeField] Sprite sprite;
+
     private int index;
     private bool state;
+
     private List<RoleContainer> roles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class TurnManager : MonoBehaviour
         index++;
         state = true;
     }
-    
+
     void Hide_Role()
     {
         text.text = "Show Role";
@@ -41,17 +41,24 @@ public class TurnManager : MonoBehaviour
     {
         if (index == roles.Count)
         {
-            text.text = "";
+            text.text = "Exit";
+            image.sprite = sprite;
+            index++;
         }
-
-        if (state)
+        else if (index == roles.Count + 1)
         {
-            Hide_Role();
+            SceneManager.LoadSceneAsync("MainMenu");
         }
         else
         {
-            Show_Role();
+            if (state)
+            {
+                Hide_Role();
+            }
+            else
+            {
+                Show_Role();
+            }
         }
-
     }
 }

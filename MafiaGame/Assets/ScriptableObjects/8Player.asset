@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: 8Player
   m_EditorClassIdentifier: 
   roles:
-  - roleName: s1
-    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
-  - roleName: s2
-    roleSprite: {fileID: 21300000, guid: 3ee0d7b17b302534abc681f2758d7358, type: 3}
-  - roleName: s3
-    roleSprite: {fileID: 21300000, guid: e0c107f87633cea458deee7b1d799379, type: 3}
-  - roleName: s4
-    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
-  - roleName: s5
-    roleSprite: {fileID: 21300000, guid: bf07c89d6bdb1384093fdad51386eb0c, type: 3}
-  - roleName: s6
-    roleSprite: {fileID: 21300000, guid: bf07c89d6bdb1384093fdad51386eb0c, type: 3}
-  - roleName: s7
-    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
-  - roleName: s8
-    roleSprite: {fileID: 21300000, guid: 49bade14e0761ec439be8e74cf54b996, type: 3}
+  - roleName: Doctor
+    roleSprite: {fileID: 21300000, guid: 9ccbb5cf5ed6d7840ac354057250ab76, type: 3}
+  - roleName: Sniper
+    roleSprite: {fileID: 21300000, guid: 237ec126ef46e3b47b833218c725688b, type: 3}
+  - roleName: Detective
+    roleSprite: {fileID: 21300000, guid: 9511ce802fb45e248a118ba6a44ae12b, type: 3}
+  - roleName: CItizen
+    roleSprite: {fileID: 21300000, guid: 818304699a8de8a4da0b389fcd0cf7ed, type: 3}
+  - roleName: GodFather
+    roleSprite: {fileID: 21300000, guid: aeb8a79441b38bb4c830e9a29e73986d, type: 3}
+  - roleName: Citizen
+    roleSprite: {fileID: 21300000, guid: e2585504914758a449ef76729da1f7d3, type: 3}
+  - roleName: Mafia
+    roleSprite: {fileID: 21300000, guid: 488416ab2187a4f48a530a1dc03b1375, type: 3}
+  - roleName: MaskedMafia
+    roleSprite: {fileID: 21300000, guid: c1a575ba6573cd144a808839d38788c4, type: 3}

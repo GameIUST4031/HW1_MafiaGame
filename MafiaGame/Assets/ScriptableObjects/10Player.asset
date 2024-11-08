@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bdd091eb856d44ac8b1ef5be4080c, type: 3}
+  m_Name: 10Player
+  m_EditorClassIdentifier: 
+  roles:
+  - roleName: Doctor
+    roleSprite: {fileID: 21300000, guid: 9ccbb5cf5ed6d7840ac354057250ab76, type: 3}
+  - roleName: Sniper
+    roleSprite: {fileID: 21300000, guid: 237ec126ef46e3b47b833218c725688b, type: 3}
+  - roleName: Detective
+    roleSprite: {fileID: 21300000, guid: 9511ce802fb45e248a118ba6a44ae12b, type: 3}
+  - roleName: Mayor
+    roleSprite: {fileID: 21300000, guid: 3ea6a50320be46a4995cdfd63354d36b, type: 3}
+  - roleName: Citizen
+    roleSprite: {fileID: 21300000, guid: 818304699a8de8a4da0b389fcd0cf7ed, type: 3}
+  - roleName: Citizen
+    roleSprite: {fileID: 21300000, guid: 167066a7f80298242913f3c8b09c086f, type: 3}
+  - roleName: Citizen
+    roleSprite: {fileID: 21300000, guid: a7b70e4dd93dcbc46b30bdb84cb0b554, type: 3}
+  - roleName: GodFather
+    roleSprite: {fileID: 21300000, guid: f02be7c54fb243a4480823bf5a8550fa, type: 3}
+  - roleName: MaskedMafia
+    roleSprite: {fileID: 21300000, guid: c1a575ba6573cd144a808839d38788c4, type: 3}
+  - roleName: Mafia
+    roleSprite: {fileID: 21300000, guid: aeb8a79441b38bb4c830e9a29e73986d, type: 3}
